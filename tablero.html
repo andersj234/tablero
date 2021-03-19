@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let columna=0
+     let fila=0
+    columna=parseInt(prompt("¿Elige el numero de columnas?"))
+    fila=parseInt(prompt("¿elige el numero de filas")) 
+    let dibujofila=""//empieza vacia
+    let cero="o"
+    let cero2="x"
+    for(let i=0;i<fila;i++)
+    { if(i%2==0)
+    {
+        cero ="o" 
+        cero2 ="x"
+    }
+    else if(i%2!=0)
+    {
+        cero ="x" 
+        cero2 ="o"
+    }
+      
+        for(let i=0; i<columna; i++)
+        {
+            if(i%2==0)
+            {
+                dibujofila +=cero
+            }
+            else if(i%2!=0)
+            {
+                dibujofila += cero2
+            }
+        
+        }
+        console.log(dibujofila)
+        dibujofila=""
+
+    }  
+    
+        
+
+           
+</script>
+    
+</body>
+</html>
